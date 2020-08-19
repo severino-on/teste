@@ -1,0 +1,1716 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-19T01:56:22.042Z",
+        "line": 6,
+        "name": "test api",
+        "description": "",
+        "id": "test-api;test-api",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que acesso a url \"https://jsonplaceholder.typicode.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://jsonplaceholder.typicode.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.RestSteps.queAcessoAUrl(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "preencho o campo \"nome\" com \"Adam\" do objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Adam\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.JsonSteps.preenchoOCampoComDoObjetoJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "preencho o campo \"idade\" com 31 do objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"idade\"",
+                  "offset": 17
+                },
+                {
+                  "val": "31",
+                  "offset": 29
+                }
+              ],
+              "location": "steps.JsonSteps.preenchoOCampoComDoObjetoJson(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "preencho o campo \"tipo\" com \"rg\" no objeto documento",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tipo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"rg\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "preencho o campo \"numero\" com \"5421542121\" no objeto documento",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"numero\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"5421542121\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "preencho o campo \"tipo\" com \"cpf\" no objeto documento_dois",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tipo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"cpf\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento_dois(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "preencho o campo \"numero\" com \"548755421\" no objeto documento_dois",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"numero\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"548755421\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento_dois(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "adiciono na lista documentos o objeto documento",
+            "match": {
+              "location": "steps.DocumentosSteps.adicionoNaListaDocumentosOObjetoDocumento()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "adiciono na lista documentos o objeto documento_dois",
+            "match": {
+              "location": "steps.DocumentosSteps.adicionoNaListaDocumentosOObjetoDocumento_dois()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "preencho o campo \"documentos\" com a lista documentos no objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComAListaDocumentosNoObjetoJson(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 2104000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "realizo um post com o endpoint \"/posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.RestSteps.realizoUmPostComOEndpoint(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 692000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "valido o campo \"nome\" com o valor \"Adam\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Adam\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "valido o campo \"documentos[0].tipo\" com o valor \"rg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos[0].tipo\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"rg\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "valido o campo \"documentos[1].tipo\" com o valor \"cpf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos[1].tipo\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"cpf\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-19T01:56:24.959Z",
+        "line": 41,
+        "name": "teste Adam",
+        "description": "",
+        "id": "test-api;\u003ccenario\u003e;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "que acesso a url \"https://jsonplaceholder.typicode.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://jsonplaceholder.typicode.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.RestSteps.queAcessoAUrl(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "preencho o campo \"nome\" com \"Adam\" do objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Adam\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.JsonSteps.preenchoOCampoComDoObjetoJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "preencho o campo \"idade\" com 31 do objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"idade\"",
+                  "offset": 17
+                },
+                {
+                  "val": "31",
+                  "offset": 29
+                }
+              ],
+              "location": "steps.JsonSteps.preenchoOCampoComDoObjetoJson(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "preencho o campo \"tipo\" com \"rg\" no objeto documento",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tipo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"rg\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "preencho o campo \"numero\" com \"5421542121\" no objeto documento",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"numero\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"5421542121\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "preencho o campo \"tipo\" com \"cpf\" no objeto documento_dois",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tipo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"cpf\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento_dois(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "preencho o campo \"numero\" com \"548755421\" no objeto documento_dois",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"numero\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"548755421\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento_dois(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "adiciono na lista documentos o objeto documento",
+            "match": {
+              "location": "steps.DocumentosSteps.adicionoNaListaDocumentosOObjetoDocumento()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "adiciono na lista documentos o objeto documento_dois",
+            "match": {
+              "location": "steps.DocumentosSteps.adicionoNaListaDocumentosOObjetoDocumento_dois()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "preencho o campo \"documentos\" com a lista documentos no objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComAListaDocumentosNoObjetoJson(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 402000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "realizo um post com o endpoint \"/posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.RestSteps.realizoUmPostComOEndpoint(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 21000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "valido o campo \"nome\" com o valor \"Adam\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Adam\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "valido o campo \"documentos[0].tipo\" com o valor \"rg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos[0].tipo\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"rg\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "valido o campo \"documentos[1].tipo\" com o valor \"cpf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos[1].tipo\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"cpf\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-19T01:56:25.415Z",
+        "line": 42,
+        "name": "teste Jose",
+        "description": "",
+        "id": "test-api;\u003ccenario\u003e;;3",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "que acesso a url \"https://jsonplaceholder.typicode.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://jsonplaceholder.typicode.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.RestSteps.queAcessoAUrl(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "preencho o campo \"nome\" com \"Jose\" do objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Jose\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.JsonSteps.preenchoOCampoComDoObjetoJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "preencho o campo \"idade\" com 35 do objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"idade\"",
+                  "offset": 17
+                },
+                {
+                  "val": "35",
+                  "offset": 29
+                }
+              ],
+              "location": "steps.JsonSteps.preenchoOCampoComDoObjetoJson(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "preencho o campo \"tipo\" com \"rg\" no objeto documento",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tipo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"rg\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "preencho o campo \"numero\" com \"5121412512\" no objeto documento",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"numero\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"5121412512\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "preencho o campo \"tipo\" com \"cnh\" no objeto documento_dois",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tipo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"cnh\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento_dois(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "preencho o campo \"numero\" com \"875421214\" no objeto documento_dois",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"numero\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"875421214\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento_dois(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "adiciono na lista documentos o objeto documento",
+            "match": {
+              "location": "steps.DocumentosSteps.adicionoNaListaDocumentosOObjetoDocumento()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "adiciono na lista documentos o objeto documento_dois",
+            "match": {
+              "location": "steps.DocumentosSteps.adicionoNaListaDocumentosOObjetoDocumento_dois()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "preencho o campo \"documentos\" com a lista documentos no objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComAListaDocumentosNoObjetoJson(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 367000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "realizo um post com o endpoint \"/posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.RestSteps.realizoUmPostComOEndpoint(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "valido o campo \"nome\" com o valor \"Jose\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Jose\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "valido o campo \"documentos[0].tipo\" com o valor \"rg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos[0].tipo\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"rg\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "valido o campo \"documentos[1].tipo\" com o valor \"cnh\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos[1].tipo\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"cnh\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-19T01:56:25.826Z",
+        "line": 43,
+        "name": "teste Igor",
+        "description": "",
+        "id": "test-api;\u003ccenario\u003e;;4",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "que acesso a url \"https://jsonplaceholder.typicode.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://jsonplaceholder.typicode.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.RestSteps.queAcessoAUrl(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "preencho o campo \"nome\" com \"Igor\" do objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Igor\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.JsonSteps.preenchoOCampoComDoObjetoJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "preencho o campo \"idade\" com 34 do objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"idade\"",
+                  "offset": 17
+                },
+                {
+                  "val": "34",
+                  "offset": 29
+                }
+              ],
+              "location": "steps.JsonSteps.preenchoOCampoComDoObjetoJson(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "preencho o campo \"tipo\" com \"rg\" no objeto documento",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tipo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"rg\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "preencho o campo \"numero\" com \"5874542121\" no objeto documento",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"numero\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"5874542121\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "preencho o campo \"tipo\" com \"passaport\" no objeto documento_dois",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tipo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"passaport\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento_dois(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "preencho o campo \"numero\" com \"215412154\" no objeto documento_dois",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"numero\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"215412154\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento_dois(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "adiciono na lista documentos o objeto documento",
+            "match": {
+              "location": "steps.DocumentosSteps.adicionoNaListaDocumentosOObjetoDocumento()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "adiciono na lista documentos o objeto documento_dois",
+            "match": {
+              "location": "steps.DocumentosSteps.adicionoNaListaDocumentosOObjetoDocumento_dois()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "preencho o campo \"documentos\" com a lista documentos no objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComAListaDocumentosNoObjetoJson(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3710000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "realizo um post com o endpoint \"/posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.RestSteps.realizoUmPostComOEndpoint(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "valido o campo \"nome\" com o valor \"Igor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Igor\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "valido o campo \"documentos[0].tipo\" com o valor \"rg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos[0].tipo\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"rg\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "valido o campo \"documentos[1].tipo\" com o valor \"passaport\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos[1].tipo\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"passaport\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-19T01:56:29.567Z",
+        "line": 44,
+        "name": "teste Maycon",
+        "description": "",
+        "id": "test-api;\u003ccenario\u003e;;5",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "que acesso a url \"https://jsonplaceholder.typicode.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://jsonplaceholder.typicode.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.RestSteps.queAcessoAUrl(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "preencho o campo \"nome\" com \"Maycon\" do objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Maycon\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.JsonSteps.preenchoOCampoComDoObjetoJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "preencho o campo \"idade\" com 25 do objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"idade\"",
+                  "offset": 17
+                },
+                {
+                  "val": "25",
+                  "offset": 29
+                }
+              ],
+              "location": "steps.JsonSteps.preenchoOCampoComDoObjetoJson(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "preencho o campo \"tipo\" com \"rg\" no objeto documento",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tipo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"rg\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "preencho o campo \"numero\" com \"8984545121\" no objeto documento",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"numero\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"8984545121\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "preencho o campo \"tipo\" com \"titulo de eleitor\" no objeto documento_dois",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tipo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"titulo de eleitor\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento_dois(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "preencho o campo \"numero\" com \"875412154\" no objeto documento_dois",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"numero\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"875412154\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento_dois(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "adiciono na lista documentos o objeto documento",
+            "match": {
+              "location": "steps.DocumentosSteps.adicionoNaListaDocumentosOObjetoDocumento()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "adiciono na lista documentos o objeto documento_dois",
+            "match": {
+              "location": "steps.DocumentosSteps.adicionoNaListaDocumentosOObjetoDocumento_dois()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "preencho o campo \"documentos\" com a lista documentos no objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComAListaDocumentosNoObjetoJson(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 381000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "realizo um post com o endpoint \"/posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.RestSteps.realizoUmPostComOEndpoint(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "valido o campo \"nome\" com o valor \"Maycon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Maycon\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "valido o campo \"documentos[0].tipo\" com o valor \"rg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos[0].tipo\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"rg\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "valido o campo \"documentos[1].tipo\" com o valor \"titulo de eleitor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos[1].tipo\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"titulo de eleitor\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-19T01:56:29.987Z",
+        "line": 45,
+        "name": "teste Severino",
+        "description": "",
+        "id": "test-api;\u003ccenario\u003e;;6",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "que acesso a url \"https://jsonplaceholder.typicode.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://jsonplaceholder.typicode.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.RestSteps.queAcessoAUrl(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "preencho o campo \"nome\" com \"Severino\" do objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Severino\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.JsonSteps.preenchoOCampoComDoObjetoJson(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "preencho o campo \"idade\" com 52 do objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"idade\"",
+                  "offset": 17
+                },
+                {
+                  "val": "52",
+                  "offset": 29
+                }
+              ],
+              "location": "steps.JsonSteps.preenchoOCampoComDoObjetoJson(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "preencho o campo \"tipo\" com \"rg\" no objeto documento",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tipo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"rg\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "preencho o campo \"numero\" com \"1213154531\" no objeto documento",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"numero\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"1213154531\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "preencho o campo \"tipo\" com \"cpf\" no objeto documento_dois",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tipo\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"cpf\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento_dois(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "preencho o campo \"numero\" com \"665421313\" no objeto documento_dois",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"numero\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"665421313\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComNoObjetoDocumento_dois(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "adiciono na lista documentos o objeto documento",
+            "match": {
+              "location": "steps.DocumentosSteps.adicionoNaListaDocumentosOObjetoDocumento()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "adiciono na lista documentos o objeto documento_dois",
+            "match": {
+              "location": "steps.DocumentosSteps.adicionoNaListaDocumentosOObjetoDocumento_dois()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "preencho o campo \"documentos\" com a lista documentos no objeto json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.DocumentosSteps.preenchoOCampoComAListaDocumentosNoObjetoJson(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 395000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "realizo um post com o endpoint \"/posts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/posts\"",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.RestSteps.realizoUmPostComOEndpoint(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "valido o campo \"nome\" com o valor \"Severino\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Severino\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "valido o campo \"documentos[0].tipo\" com o valor \"rg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos[0].tipo\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"rg\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "valido o campo \"documentos[1].tipo\" com o valor \"cpf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"documentos[1].tipo\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"cpf\"",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.RestSteps.validoOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          }
+        ]
+      }
+    ],
+    "name": "test api",
+    "description": "",
+    "id": "test-api",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/teste.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
