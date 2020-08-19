@@ -1,0 +1,11 @@
+version: '3'
+services:
+    jenkins:
+       build:
+         context: ./docker
+         dockerfile: Dockerfile
+       image: jenkins-bill
+       volumes: 
+        - ./testeseverino
+       ports: 
+        - 8080:8080 
